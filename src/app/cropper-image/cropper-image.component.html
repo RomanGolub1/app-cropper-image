@@ -1,0 +1,16 @@
+<img [src]="croppedImage" />
+
+<div>
+  <image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [imageBase64]="LoadedImage"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4/4"
+    [resizeToWidth]="128"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+  ></image-cropper>
+</div>

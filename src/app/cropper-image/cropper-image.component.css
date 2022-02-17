@@ -1,0 +1,13 @@
+image-cropper {
+  height: 70vh;
+}
+
+div {
+  float: left;
+}
+
+img {
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+}
